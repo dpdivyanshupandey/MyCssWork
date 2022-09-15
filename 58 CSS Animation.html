@@ -1,0 +1,39 @@
+<html>
+  <head>
+      <title>CSS Animation</title>
+
+         <style>
+		 body{
+		   background:gray;
+		   }
+		 .box{
+		     border:1px solid black;
+			 width:200px;
+			 height:150px;
+			 text-align:center;
+			 margin:100px 200px 0 400px ;
+			 animation-name:sample;
+			 animation-duration:2s;
+			 animation-iteration-count:infinite;
+			 animation-direction:alternate-reverse;
+			 background:pink;
+			 animation-timing-function:steps(4,end);
+			 animation-fill-mode:backwards;
+		     }
+			.box:hover{
+			          animation-play-state:paused;
+					  }
+		 @keyframes sample{
+		                   0%{border-radius:0%;background:yellow;width:250px;}
+						   10%{background:lightskyblue;width:300px;}
+						   40%{background:pink;width:350px;}
+						   70%{background:green;width:400px;}
+						   
+						   100%0{border-radius:50%;background:tomato;color:white;width:450px;}
+		                             }
+         </style>
+  </head>
+          <body>
+		  <div class="box">Divyanshu Pandey</div>
+          </body>
+</html>
